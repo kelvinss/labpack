@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CMD="$1"
+lxterminal --command "bash-with-cmd $1"

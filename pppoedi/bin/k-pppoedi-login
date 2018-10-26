@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CFG="$HOME/.k/login"
+if [ -f "$CFG" ]; then
+  . "$CFG";
+# else
+  # 1>&2 echo "Falta arquivo $CFG"
+  # exit 1
+fi
+
+if [ -z "$USERNAME" ]; then
+  pppoedi-cli
+else
+  printf "$USERNAME\n" | pppoedi-cli
+fi

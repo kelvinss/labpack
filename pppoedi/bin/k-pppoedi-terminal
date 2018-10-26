@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# lxterminal --command 'my-pppoedi-login'
+
+lxterminal-with-cmd "k-pppoedi-login"

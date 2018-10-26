@@ -1,0 +1,10 @@
+#!/bin/bash
+
+CMD="$1"
+
+PIPE=$(mktemp)
+echo ". \"$HOME/.bashrc\"; $CMD" >> $PIPE
+
+bash --init-file "$PIPE"
+
+rm $PIPE
